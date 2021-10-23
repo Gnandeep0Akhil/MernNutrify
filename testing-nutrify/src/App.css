@@ -1,0 +1,366 @@
+.Railing {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 15vh;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(100, 50, 200);
+    color: white;
+}
+
+.Navbar {
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 35vw;
+    height: 15vh;
+    text-align: center;
+    background-color: rgb(100, 50, 200);
+}
+.Navbar button{
+    margin-top: 5vh;
+}
+.Navbar .logout {
+    background-color: rgb(255, 215, 140);
+}
+
+.Main {
+    position: fixed;
+    right: 0%;
+    top: 15vh;
+    width: 65vw;
+    height: 85vh;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.DateForm {
+    position: fixed;
+    left: 0%;
+    top: 15vh;
+    width: 35vw;
+    height: 20vh;
+    padding-top: 5vh;
+    text-align: center;
+    background-color: wheat;
+}
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 20px;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+input[type="date"],
+focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+input[type=submit] {
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(100, 50, 200);
+}
+input[type=submit]:hover {
+    background-color: rgb(120, 80, 200);
+    color: white;
+}
+
+.CalorieMeter {
+    position: fixed;
+    left: 0%;
+    top: 40vh;
+    width: 35vw;
+    height: 45vh;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.styled progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+
+    width: 55%;
+    height: 300px;
+    padding-bottom: 50px;
+}
+.styled progress::-webkit-progress-bar {
+    background: #EEE;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+    border-radius: 3px;
+}
+.styled .Alert::-webkit-progress-value {
+    background-color: #ff0e0e;
+    border-radius: 3px;
+}
+.styled progress::-webkit-progress-value {
+    background-color: #00ff40;
+    border-radius: 3px;
+}
+progress:before {
+    content: attr(data-label);
+    font-weight: bolder;
+    color: rgb(88, 88, 88);
+}
+
+
+.Card {
+    text-align: left;
+    margin: 15px;
+    border-radius: 5px;
+    height: 30vh;
+    background-color: #18ff52;
+}
+.Card .content {
+    position: relative;
+    height: 30vh;
+    width: 50vw;
+    left: 0vw;
+    top: 0vh;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.Card .button {
+    position: relative;
+    padding: 3vh 0vw;
+    width: 10vw;
+    height: 18vh;
+    left: 50vw;
+    bottom: 27vh;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: wheat;
+}
+.mName {
+    padding: 3px 10px;
+    font-style: oblique;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+.mType {
+    padding: 5px 10px;
+    background-color: rgb(120, 80, 200);
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: large;
+}
+.mDescription {
+    padding: 3px 10px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: medium;
+}
+.mCalorie {
+    padding: 5px 10px;
+    font-family: Georgia, serif;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(100, 50, 200);
+}
+.Card span {
+    font-size: xx-small;
+    color: rgb(100, 100, 100);
+    padding: 2px 5px;
+}
+.Card .mType span {
+    font-size: xx-small;
+    color: whitesmoke;
+    padding: 2px 5px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: rgb(100, 50, 200);
+}
+
+button:hover {
+    background-color: rgb(120, 80, 200);
+    color: white;
+}
+
+label,
+h4 {
+    font-weight: bolder;
+    color: rgb(88, 88, 88);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+}
+.popup-inner {
+    position: relative;
+    padding: 10vh;
+    top: 14vh;
+    width: 100%;
+    height: 60vh;
+    max-width: 640px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.popup-inner button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+input[type=text],
+input[type=number],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(100, 50, 200);
+}
+input[type=submit]:hover {
+    background-color: rgb(120, 80, 200);
+    color: white;
+}
+
+.fetch {
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(100, 50, 200);
+    background-color: whitesmoke;
+}
+.fetch:hover {
+    background-color: rgb(120, 80, 200);
+    color: white;
+}
+.shortOne input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    margin-right: 16px;
+    box-sizing: border-box;
+}
+
+.login {
+    position: absolute;
+    padding: 10vh;
+    left: 20vw;
+    top: 15vh;
+    width: 100%;
+    height: 65vh;
+    max-width: 640px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.signup {
+    position: absolute;
+    padding: 10vh;
+    left: 20vw;
+    top: 15vh;
+    width: 100%;
+    height: 65vh;
+    max-width: 640px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.signup .loginB {
+    position: absolute;
+    left: 35vw;
+    top: 65vh;
+}
+
+.Main p{
+    position: relative;
+    top: 40vh;
+    left: 25vw;
+    width: 15vw;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    color: rgb(88, 88, 88);
+}
+.popup-inner p{
+    position: relative;
+    top: 22vh;
+    left: 12vw;
+    width: 20vw;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    color: rgb(255, 0, 0);
+}
+.login h3{
+    color: rgb(255, 0, 0);
+}
+.signup h3 {
+    color: rgb(255, 0, 0);
+}
