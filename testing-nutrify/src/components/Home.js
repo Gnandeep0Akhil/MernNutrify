@@ -36,7 +36,7 @@ class Home extends Component {
       date: date,
       sessionId: sessionId,
     };
-    fetch("/home/meals", {
+    fetch("https://bendnutrify.onrender.com/home/meals", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       mode: "cors",
@@ -104,7 +104,7 @@ class Home extends Component {
       ...item,
     };
 
-    fetch("/home/updateProfile", {
+    fetch("https://bendnutrify.onrender.com/home/updateProfile", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       mode: "cors",
@@ -115,7 +115,7 @@ class Home extends Component {
       })
       .then((data) => {
         if (data.updateProfileStatus) {
-          this.setState({calorie: value.calorie});
+          this.setState({ calorie: value.calorie });
           sessionStorage.clear();
           sessionStorage.setItem("sessionId", value.email);
         }
@@ -139,7 +139,7 @@ class Home extends Component {
       ...item,
     };
 
-    fetch("/home/addOne", {
+    fetch("https://bendnutrify.onrender.com/home/addOne", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       mode: "cors",
@@ -173,7 +173,7 @@ class Home extends Component {
       ...item,
     };
 
-    fetch("/home/updateMeal", {
+    fetch("https://bendnutrify.onrender.com/home/updateMeal", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       mode: "cors",
@@ -209,7 +209,7 @@ class Home extends Component {
   };
 
   DeleteCard = (value) => {
-    fetch("/home/deleteMeal", {
+    fetch("https://bendnutrify.onrender.com/home/deleteMeal", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       mode: "cors",

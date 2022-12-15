@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import FirstComponent from './FirstComponent';
+import FirstComponent from "./FirstComponent";
 
 export class SignUp extends Component {
   constructor(props) {
@@ -31,8 +31,8 @@ export class SignUp extends Component {
   };
 
   handleSubmit = (event) => {
-    if( this.state.password === this.state.dpassword ){
-      fetch("/auth/signup", {
+    if (this.state.password === this.state.dpassword) {
+      fetch("https://bendnutrify.onrender.com/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         mode: "cors",
@@ -54,7 +54,6 @@ export class SignUp extends Component {
       this.setState({ error: "Passwords do not match!" });
       event.preventDefault();
     }
-    
   };
 
   render() {
@@ -102,9 +101,7 @@ export class SignUp extends Component {
             </label>
             <br></br>
             <br></br>
-            <input
-              type="submit"
-            />
+            <input type="submit" />
           </form>
           <div>
             <h3>{this.state.error}</h3>
@@ -120,4 +117,4 @@ export class SignUp extends Component {
   }
 }
 
-export default SignUp
+export default SignUp;

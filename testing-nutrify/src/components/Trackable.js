@@ -20,7 +20,7 @@ class Trackable extends Component {
       date: this.state.date,
       sessionId: sessionId,
     };
-    fetch("/home/meals", {
+    fetch("https://bendnutrify.onrender.com/home/meals", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       mode: "cors",

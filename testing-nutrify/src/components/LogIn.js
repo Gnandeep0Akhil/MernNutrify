@@ -23,7 +23,7 @@ export class LogIn extends Component {
   };
 
   handleSubmit = (event) => {
-    fetch("/auth/signin", {
+    fetch("https://bendnutrify.onrender.com/auth/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       mode: "cors",
@@ -33,11 +33,11 @@ export class LogIn extends Component {
         return res.json();
       })
       .then((data) => {
-        if(data.email){
+        if (data.email) {
           sessionStorage.setItem("sessionId", data.email);
           this.setState({ loginStatus: true });
           this.props.history.push("/");
-        }else{
+        } else {
           this.setState({ error: data.message });
         }
       })

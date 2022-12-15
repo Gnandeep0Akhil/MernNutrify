@@ -18,7 +18,7 @@ class Profile extends Component {
     var query = {
       sessionId: sessionId
     };
-    fetch("/home/profile", {
+    fetch("https://bendnutrify.onrender.com/home/profile", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       mode: "cors",

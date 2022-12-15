@@ -54,6 +54,7 @@ class AddOne extends Component {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         this.setState({ mCalorie: data.foods[0].nf_calories });
       })
       .catch((err) => {
